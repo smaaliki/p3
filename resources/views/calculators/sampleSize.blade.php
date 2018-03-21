@@ -5,12 +5,32 @@
 @endsection
 
 @section('content')
-<h1>Contact Center Standards</h1>
+<h1>Contact Center Calculators</h1>
 
-<p>We will create a user sign in page. Which will then take the user to setup his contact center after which he/she can use the calculators.</p>
+<form id='systemUpTimeForm' method='get' action=''>
+    <fieldset>
+        <legend class='calcTitle'>Sample Size</legend>
 
-<ul>
-    <li><a href='sampleSize.php'>Sample Size</a></li>
-    <li><a href='systemUptime.php'>System Uptime</a></li>
-</ul>
+        <label for='numCalls'>Number of Contacts
+            <input type='text' id='numCalls' name='numCalls' >  <!--do we need sanitize here?-->
+        </label>
+        <br>
+
+        <p>Confidence Level<br>
+            <input type='radio' name='confLevel' value='1'> 80%
+            <input type='radio' name='confLevel' value='2'> 85%
+            <input type='radio' name='confLevel' value='3'> 90%
+            <input type='radio' name='confLevel' value='4'> 95%
+            <input type='radio' name='confLevel' value='5'> 99%
+        </p>
+
+        <label for='errorMargin'>Margin of Error (%)
+            <input type='text' id='errorMargin' name='errorMargin' > <!--do we need sanitize here?-->
+        </label>
+        <br>
+
+        <input class='button' type='submit' value='Submit'/>
+    </fieldset>
+</form>
+
 @endsection
