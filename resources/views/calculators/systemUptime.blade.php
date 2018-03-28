@@ -1,17 +1,15 @@
 @extends('layouts.master')
 
 @section('title')
-    CC Calculators
+    System Uptime Calculator
 @endsection
 
 @section('content')
-<h1>Contact Center Calculators</h1>
+<h1>Contact Center Calculators >> System Uptime</h1>
 
-<form id='systemUpTimeForm' method='get' action=''>
+<p>This form is not yet ready for showtime!!</p>
+<form method='GET' action='/calculators/systemUptime'>
     <fieldset>
-        <legend class='calcTitle'>System Uptime</legend>
-
-        <!--Todo: are we allowed to use the same label for multiple inputs?-->
         <label for='month'>Select Month and Year:
             <select name='month' id='month'>
                 <option value='1'>Jan</option>

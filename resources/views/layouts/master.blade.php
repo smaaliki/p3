@@ -3,26 +3,19 @@
 <head>
     <title>@yield('title', 'Some Title')</title>
     <meta charset='utf-8'>
-    <link href='/css/main.css' type='text/css' rel='stylesheet'>
+    <link href='/css/p3.css' type='text/css' rel='stylesheet'>
 
     @stack('head')
 </head>
 <body>
 
 <header>
-    <div class="pageheader">
-        <div class='logo'>
-            <a href="../index.php">
-                <img src="../images/logo.jpg" alt="Logo">
-            </a>
-        </div>
-        <div>
-            <div class='hdrtitle'> Entity Name Here</div>
-        </div>
-    </div>
+    <a href='/'><img src='/images/logo.jpg' id='logo' alt='Entity  Logo'></a>
+    <div id='hdrtitle'> Entity Name Here</div>
+    @include('modules.nav')
 </header>
 
-<section>
+<section id='main'>
     @yield('content')
 </section>
 

@@ -13,6 +13,11 @@ class PageController extends Controller
 
     public function about()
     {
-        return 'About the CC Calculators';
+        return view('about');
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 }

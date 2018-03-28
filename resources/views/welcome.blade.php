@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    CC Calculators
+CC Calculators
 @endsection
 
 @section('content')

@@ -1,4 +1,47 @@
+ {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
+    color: #111;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* sticky footer */
+    position: relative;
+    min-height: 100%;
+}
+
 body {
+    /* Default font-size */
+    font-size: 26px;
+    font-size: 1.6rem;
+
+    /* sticky footer - match footer height */
+    margin-bottom: 60px;
+}
+
+section#main {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo {
+    /* Actual width is 632; displaying at half-size for retina screens */
+    width: 316px;
+}
+
+/*body {
     font-family: 'DubaiW23-Regular', "Droid Arabic Kufi", "Open Sans", Arial, sans-serif;
     margin: 2em 5em 2em 5em;
 }
@@ -23,16 +66,47 @@ h1 {
     float: left;
 }
 
+.hdrtitle {
+    font-size: 2em;
+    width: 70%;
+}
+
+/*----------------------------------------------------
+Nav bar
+-----------------------------------------------------*/
+nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #18bc9c; /* flatly teel */
+}
+
 .hdrnav {
     width: 85%;
     margin-left: 10%;
     clear: right;
     float: right;
-}
-
-.hdrtitle {
-    font-size: 2em;
-    width: 70%;
 }
 
 .button {
@@ -51,4 +125,26 @@ footer {
 
 .outMessage {
     font-weight
+}
+
+
+
+/*----------------------------------------------------
+Typography
+-----------------------------------------------------*/
+a.active:link, a.active:visited, a.active:active, a.active:hover {
+    color: #18bc9c;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.0rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.0rem;
 }

@@ -13,9 +13,15 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'CC Calculators'),
 
-    /*
+    'nav' => [
+        '/' => 'Home',
+        '/calculators' => 'Calculators',
+        '/about' => 'About',
+        '/contact' => 'Contact',
+    ],
+        /*
     |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
