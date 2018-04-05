@@ -11,10 +11,10 @@ Naming of the methods in the CalculatorsController.php file veered from the came
 The style used was "Something_Something_Calc".  This allows us to look for "_Calc" in order
 to make sure that this is a calculator method.  Also, the first underscore can be replaced 
 with a space which allows us to use the remaining string as the name of the calculator when
-listing the calculators.
+listing the calculators individually one by one. 
 
 ## Notes for instructor
 I have not installed any other packages at this time.  I was going to install a 
 user authentication package, when I realized that in the config directory, there is an 
 "auth.php" file.  I figured it's better to wait till we cover this subject before 
-I implement such a thing,
+I implement such a thing.
